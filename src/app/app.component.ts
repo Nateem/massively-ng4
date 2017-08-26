@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import {Router,RouterLinkActive} from '@angular/router';
+import {Menu_Navbar} from './app.routes';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  navbar = Menu_Navbar;
 }
