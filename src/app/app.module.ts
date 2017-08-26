@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import {RouterModule} from '@angular/router';
 import {routing} from './app.routes';
+import {TestdataService} from './testdata.service';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -34,7 +35,9 @@ import { CopyrightComponent } from './copyright/copyright.component';
     RouterModule,
     routing
   ],
-  providers: [],
+  providers: [
+    TestdataService
+  ],
   entryComponents:[
     FooterComponent
   ],

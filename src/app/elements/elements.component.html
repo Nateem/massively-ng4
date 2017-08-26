@@ -1,3 +1,31 @@
 <div id="main">
-    test
-</div>
+    <div class="actions">
+        <button class="button special " (click)="showdata()">Showdata</button>
+    </div>
+
+    <div *ngIf="data">
+        <div class="table-wrapper">
+            <table class="alt">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Group</th>
+                        <th>Code</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let d of data.DATA">
+                        <td>{{d.ID | number}}</td>
+                        <td>{{d.AUMNO | number}}</td>
+                        <td>{{d.MASCODE}}</td>
+                        <td>{{d.customer_NAME}}</td>
+                        <td>{{d.TEL}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
